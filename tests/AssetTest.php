@@ -8,9 +8,7 @@ use Yii;
 use Yii2\Asset\BootstrapAsset;
 use Yii2\Asset\BootstrapPluginAsset;
 use yii\web\AssetBundle;
-use yii\web\JqueryAsset;
 use yii\web\View;
-use yii\web\YiiAsset;
 
 final class AssetTest extends TestCase
 {
