@@ -9,7 +9,7 @@ use yii\web\AssetBundle;
 /**
  * Twitter Bootstrap 5 CSS bundle.
  */
-class BootstrapAsset extends AssetBundle
+final class BootstrapAsset extends AssetBundle
 {
     /**
      * @inheritDoc
@@ -20,9 +20,11 @@ class BootstrapAsset extends AssetBundle
     {
         parent::init();
 
-        $assetBootstrap = YII_ENV === 'prod' ? 'bootstrap.min.css' : 'bootstrap.css';
+        $assetBootstrap = YII_ENV === 'prod'
+            ? ['bootstrap.min.css', 'bootstrap.min.css.map']
+            : ['bootstrap.css', 'bootstrap.css.map'];
 
-        $this->js[] = $assetBootstrap;
-        $this->publishOptions['only'] = [$assetBootstrap];
+        $this->css = $assetBootstrap;
+        $this->publishOptions['only'] = $assetBootstrap;
     }
 }

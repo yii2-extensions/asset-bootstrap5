@@ -46,7 +46,8 @@ final class AssetTest extends TestCase
 
         $result = $view->renderFile(__DIR__ . '/support/main.php');
 
-        $this->assertMatchesRegularExpression('/bootstrap.css/', $result);
+        $this->assertStringContainsString('bootstrap.css', $result);
+        $this->assertStringContainsString('bootstrap.css.map', $result);
     }
 
     public function testBootstrapPluginAssetSimpleDependency(): void
@@ -86,8 +87,10 @@ final class AssetTest extends TestCase
 
         $result = $view->renderFile(__DIR__ . '/support/main.php');
 
-        $this->assertMatchesRegularExpression('/bootstrap.css/', $result);
-        $this->assertMatchesRegularExpression('/bootstrap.bundle.js/', $result);
+        $this->assertStringContainsString('bootstrap.css', $result);
+        $this->assertStringContainsString('bootstrap.css.map', $result);
+        $this->assertStringContainsString('bootstrap.bundle.js', $result);
+        $this->assertStringContainsString('bootstrap.bundle.js.map', $result);
     }
 
     private function sourcesPublishVerifyFiles(string $type, object $bundle): void
