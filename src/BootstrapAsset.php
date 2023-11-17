@@ -21,8 +21,7 @@ final class BootstrapAsset extends AssetBundle
         parent::init();
 
         $assetBootstrap = YII_ENV === 'prod'
-            ? ['bootstrap.min.css', 'bootstrap.min.css.map']
-            : ['bootstrap.css', 'bootstrap.css.map'];
+            ? ['bootstrap.min.css', 'bootstrap.min.css.map'] : ['bootstrap.css', 'bootstrap.css.map'];
 
         $this->css = $assetBootstrap;
         $this->publishOptions['only'] = $assetBootstrap;

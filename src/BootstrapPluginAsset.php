@@ -28,8 +28,7 @@ final class BootstrapPluginAsset extends AssetBundle
         parent::init();
 
         $assetBootstrapPlugin = YII_ENV === 'prod'
-            ? ['bootstrap.bundle.min.js', 'bootstrap.bundle.min.js.map']
-            : ['bootstrap.bundle.js', 'bootstrap.bundle.js.map'];
+            ? ['bootstrap.bundle.min.js', 'bootstrap.bundle.min.js.map'] : ['bootstrap.bundle.js', 'bootstrap.bundle.js.map'];
 
         $this->js = $assetBootstrapPlugin;
         $this->publishOptions['only'] = $assetBootstrapPlugin;
