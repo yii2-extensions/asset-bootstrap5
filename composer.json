@@ -13,6 +13,7 @@
     "require": {
         "php": ">=8.1",
         "npm-asset/bootstrap": "^5.3",
+        "npm-asset/popperjs--core": "^2.11",
         "oomphinc/composer-installers-extender": "^2.0",
         "yiisoft/yii2": "^2.2"
     },
