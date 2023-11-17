@@ -65,9 +65,49 @@ BootstrapAsset::register($this);
 
 declare(strict_types=1);
 
+use Yii2\Asset\BootstrapCdnAsset;
+
+BootstrapCdnAsset::register($this);
+```
+
+```php
+<?php
+
+declare(strict_types=1);
+
 use Yii2\Asset\BootstrapPluginAsset;
 
 BootstrapPluginAsset::register($this);
+```
+
+```php
+<?php
+
+declare(strict_types=1);
+
+use Yii2\Asset\BootstrapPluginCdnAsset;
+
+BootstrapPluginCdnAsset::register($this);
+```
+
+```php
+<?php
+
+declare(strict_types=1);
+
+use Yii2\Asset\PopperAsset;
+
+PopperAsset::register($this);
+```
+
+```php
+<?php
+
+declare(strict_types=1);
+
+use Yii2\Asset\PopperCdnAsset;
+
+PopperCdnAsset::register($this);
 ```
 
 ## Testing
