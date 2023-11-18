@@ -2,7 +2,7 @@
     <a href="https://github.com/yii2-extensions/asset-bootstrap5" target="_blank">
         <img src="https://www.yiiframework.com/image/yii_logo_light.svg" height="100px;">
     </a>
-    <h1 align="center">Asset for Twitter Bootstrap5.</h1>
+    <h1 align="center">Asset for Twitter Bootstrap 5.</h1>
     <br>
 </p>
 
