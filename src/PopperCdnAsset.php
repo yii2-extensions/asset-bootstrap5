@@ -13,6 +13,8 @@ final class PopperCdnAsset extends AssetBundle
 {
     /**
      * @inheritDoc
+     *
+     * @phpstan-var array<array-key, mixed>
      */
     public $js = [
         'https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js',
@@ -20,6 +22,8 @@ final class PopperCdnAsset extends AssetBundle
 
     /**
      * @inheritDoc
+     *
+     * @phpstan-var array<array-key, mixed>
      */
     public $jsOptions = [
         'crossorigin' => 'anonymous',

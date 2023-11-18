@@ -18,6 +18,8 @@ final class BootstrapPluginAsset extends AssetBundle
 
     /**
      * @inheritDoc
+     *
+     * @phpstan-var array<array-key, mixed>
      */
     public $depends = [
         BootstrapAsset::class,
