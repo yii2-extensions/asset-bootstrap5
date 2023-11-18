@@ -42,7 +42,6 @@ final class AssetTest extends TestCase
         $result = $view->renderFile(__DIR__ . '/support/main.php');
 
         $this->assertStringContainsString('bootstrap.css', $result);
-        $this->assertStringContainsString('bootstrap.css.map', $result);
     }
 
     public function testBootstrapCdnAssetSimpleDependency(): void
@@ -107,9 +106,7 @@ final class AssetTest extends TestCase
         $result = $view->renderFile(__DIR__ . '/support/main.php');
 
         $this->assertStringContainsString('bootstrap.css', $result);
-        $this->assertStringContainsString('bootstrap.css.map', $result);
         $this->assertStringContainsString('bootstrap.bundle.js', $result);
-        $this->assertStringContainsString('bootstrap.bundle.js.map', $result);
     }
 
     public function testBootstrapPluginCdnAssetSimpleDependency(): void
@@ -180,7 +177,6 @@ final class AssetTest extends TestCase
         $result = $view->renderFile(__DIR__ . '/support/main.php');
 
         $this->assertStringContainsString('popper.js', $result);
-        $this->assertStringContainsString('popper.js.map', $result);
     }
 
     public function testPopperCdnAssetSimpleDependency(): void
