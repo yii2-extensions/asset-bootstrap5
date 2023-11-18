@@ -39,7 +39,7 @@ final class AssetTest extends TestCase
         $this->assertCount(1, $view->assetBundles);
         $this->assertInstanceOf(AssetBundle::class, $view->assetBundles[BootstrapAsset::class]);
 
-        $result = $view->renderFile(__DIR__ . '/support/main.php');
+        $result = $view->renderFile(__DIR__ . '/Support/main.php');
 
         $this->assertStringContainsString('bootstrap.css', $result);
     }
@@ -67,7 +67,7 @@ final class AssetTest extends TestCase
         $this->assertCount(1, $view->assetBundles);
         $this->assertInstanceOf(AssetBundle::class, $view->assetBundles[BootstrapCdnAsset::class]);
 
-        $result = $view->renderFile(__DIR__ . '/support/main.php');
+        $result = $view->renderFile(__DIR__ . '/Support/main.php');
 
         $this->assertStringContainsString(
             <<<HTML
@@ -103,7 +103,7 @@ final class AssetTest extends TestCase
         $this->assertInstanceOf(AssetBundle::class, $view->assetBundles[BootstrapPluginAsset::class]);
         $this->assertInstanceOf(AssetBundle::class, $view->assetBundles[BootstrapAsset::class]);
 
-        $result = $view->renderFile(__DIR__ . '/support/main.php');
+        $result = $view->renderFile(__DIR__ . '/Support/main.php');
 
         $this->assertStringContainsString('bootstrap.css', $result);
         $this->assertStringContainsString('bootstrap.bundle.js', $result);
@@ -135,7 +135,7 @@ final class AssetTest extends TestCase
         $this->assertInstanceOf(AssetBundle::class, $view->assetBundles[BootstrapPluginCdnAsset::class]);
         $this->assertInstanceOf(AssetBundle::class, $view->assetBundles[BootstrapCdnAsset::class]);
 
-        $result = $view->renderFile(__DIR__ . '/support/main.php');
+        $result = $view->renderFile(__DIR__ . '/Support/main.php');
 
         $this->assertStringContainsString(
             <<<HTML
@@ -174,7 +174,7 @@ final class AssetTest extends TestCase
         $this->assertCount(1, $view->assetBundles);
         $this->assertInstanceOf(AssetBundle::class, $view->assetBundles[PopperAsset::class]);
 
-        $result = $view->renderFile(__DIR__ . '/support/main.php');
+        $result = $view->renderFile(__DIR__ . '/Support/main.php');
 
         $this->assertStringContainsString('popper.js', $result);
     }
@@ -202,7 +202,7 @@ final class AssetTest extends TestCase
         $this->assertCount(1, $view->assetBundles);
         $this->assertInstanceOf(AssetBundle::class, $view->assetBundles[PopperCdnAsset::class]);
 
-        $result = $view->renderFile(__DIR__ . '/support/main.php');
+        $result = $view->renderFile(__DIR__ . '/Support/main.php');
 
         $this->assertStringContainsString(
             <<<HTML
