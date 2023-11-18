@@ -13,6 +13,8 @@ final class BootstrapCdnAsset extends AssetBundle
 {
     /**
      * @inheritDoc
+     *
+     * @phpstan-var array<array-key, mixed>
      */
     public $css = [
         'https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css',
@@ -20,6 +22,8 @@ final class BootstrapCdnAsset extends AssetBundle
 
     /**
      * @inheritDoc
+     *
+     * @phpstan-var array<array-key, mixed>
      */
     public $cssOptions = [
         'crossorigin' => 'anonymous',

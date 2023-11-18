@@ -19,11 +19,14 @@
     <a href="https://codecov.io/gh/yii2-extensions/asset-bootstrap5" target="_blank">
         <img src="https://codecov.io/gh/yii2-extensions/asset-bootstrap5/branch/main/graph/badge.svg?token=MF0XUGVLYC" alt="Codecov">
     </a>
+    <a href="https://dashboard.stryker-mutator.io/reports/github.com/yii2-extensions/asset-bootstrap5/main" target="_blank">
+        <img src="https://img.shields.io/endpoint?style=flat&url=https%3A%2F%2Fbadge-api.stryker-mutator.io%2Fgithub.com%2Fyii2-extensions%2Fasset-bootstrap5%2Fmain" alt="Infection">
+    </a>      
     <a href="https://github.com/yii2-extensions/asset-bootstrap5/actions/workflows/static.yml" target="_blank">
         <img src="https://github.com/yii2-extensions/gii/actions/workflows/static.yml/badge.svg" alt="PHPStan">
     </a>
     <a href="https://github.com/yii2-extensions/asset-bootstrap5/actions/workflows/static.yml" target="_blank">
-        <img src="https://img.shields.io/badge/PHPStan%20level-5-blue" alt="PHPStan level">
+        <img src="https://img.shields.io/badge/PHPStan%20level-7-blue" alt="PHPStan level">
     </a>
     <a href="https://github.styleci.io/repos/719651888?branch=main" target="_blank">
         <img src="https://github.styleci.io/repos/719651888/shield?branch=main" alt="Code style">
