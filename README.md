@@ -21,16 +21,7 @@
     </a>
     <a href="https://dashboard.stryker-mutator.io/reports/github.com/yii2-extensions/asset-bootstrap5/main" target="_blank">
         <img src="https://img.shields.io/endpoint?style=flat&url=https%3A%2F%2Fbadge-api.stryker-mutator.io%2Fgithub.com%2Fyii2-extensions%2Fasset-bootstrap5%2Fmain" alt="Infection">
-    </a>      
-    <a href="https://github.com/yii2-extensions/asset-bootstrap5/actions/workflows/static.yml" target="_blank">
-        <img src="https://github.com/yii2-extensions/gii/actions/workflows/static.yml/badge.svg" alt="PHPStan">
-    </a>
-    <a href="https://github.com/yii2-extensions/asset-bootstrap5/actions/workflows/static.yml" target="_blank">
-        <img src="https://img.shields.io/badge/PHPStan%20level-7-blue" alt="PHPStan level">
-    </a>
-    <a href="https://github.styleci.io/repos/719651888?branch=main" target="_blank">
-        <img src="https://github.styleci.io/repos/719651888/shield?branch=main" alt="Code style">
-    </a>               
+    </a>                  
 </p>
 
 ## Installation
@@ -112,6 +103,17 @@ use Yii2\Asset\PopperCdnAsset;
 
 PopperCdnAsset::register($this);
 ```
+
+## Quality code
+  
+[![static-analysis](https://github.com/yii2-extensions/asset-bootstrap5/actions/workflows/static.yml/badge.svg)](hhttps://github.com/yii2-extensions/asset-bootstrap5/actions/workflows/static.yml)
+[![phpstan-level](https://img.shields.io/badge/PHPStan%20level-7-blue)](https://github.com/yii2-extensions/asset-bootstrap5/actions/workflows/static.yml)
+[![style-ci](https://github.styleci.io/repos/719651888/shield?branch=main)](https://github.styleci.io/repos/719651888?branch=main)
+
+## Support versions Yii2
+
+[![Yii20](https://img.shields.io/badge/Yii2%20version-2.0-blue)](https://github.com/yiisoft/yii2/tree/2.0.49.3)
+[![Yii22](https://img.shields.io/badge/Yii2%20version-2.2-blue)](https://img.shields.io/badge/Yii2%20version-2.2-blue)
 
 ## Testing
 
