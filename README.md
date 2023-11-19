@@ -10,12 +10,12 @@
     <a href="https://www.php.net/releases/8.1/en.php" target="_blank">
         <img src="https://img.shields.io/badge/PHP-%3E%3D8.1-787CB5" alt="php-version">
     </a>
-    <a href="https://github.com/yiisoft/yii2/tree/2.2" target="_blank">
-        <img src="https://img.shields.io/badge/Yii2%20version-2.2-blue" alt="yii2-version">
-    </a>
     <a href="https://github.com/yii2-extensions/asset-bootstrap5/actions/workflows/build.yml" target="_blank">
         <img src="https://github.com/yii2-extensions/asset-bootstrap5/actions/workflows/build.yml/badge.svg" alt="PHPUnit">
     </a>
+    <a href="https://github.com/yii2-extensions/asset-bootstrap5/actions/workflows/compatibility.yml" target="_blank">
+        <img src="https://github.com/yii2-extensions/asset-bootstrap5/actions/workflows/compatibility.yml/badge.svg" alt="PHPUnit">
+    </a>    
     <a href="https://codecov.io/gh/yii2-extensions/asset-bootstrap5" target="_blank">
         <img src="https://codecov.io/gh/yii2-extensions/asset-bootstrap5/branch/main/graph/badge.svg?token=MF0XUGVLYC" alt="Codecov">
     </a>
@@ -106,14 +106,14 @@ PopperCdnAsset::register($this);
 
 ## Quality code
   
-[![static-analysis](https://github.com/yii2-extensions/asset-bootstrap5/actions/workflows/static.yml/badge.svg)](hhttps://github.com/yii2-extensions/asset-bootstrap5/actions/workflows/static.yml)
+[![static-analysis](https://github.com/yii2-extensions/asset-bootstrap5/actions/workflows/static.yml/badge.svg)](https://github.com/yii2-extensions/asset-bootstrap5/actions/workflows/static.yml)
 [![phpstan-level](https://img.shields.io/badge/PHPStan%20level-7-blue)](https://github.com/yii2-extensions/asset-bootstrap5/actions/workflows/static.yml)
 [![style-ci](https://github.styleci.io/repos/719651888/shield?branch=main)](https://github.styleci.io/repos/719651888?branch=main)
 
 ## Support versions Yii2
 
 [![Yii20](https://img.shields.io/badge/Yii2%20version-2.0-blue)](https://github.com/yiisoft/yii2/tree/2.0.49.3)
-[![Yii22](https://img.shields.io/badge/Yii2%20version-2.2-blue)](https://img.shields.io/badge/Yii2%20version-2.2-blue)
+[![Yii22](https://img.shields.io/badge/Yii2%20version-2.2-blue)](https://github.com/yiisoft/yii2/tree/2.2)
 
 ## Testing
 
