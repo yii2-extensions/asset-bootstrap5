@@ -2,7 +2,7 @@
     <a href="https://github.com/yii2-extensions/asset-bootstrap5" target="_blank">
         <img src="https://www.yiiframework.com/image/yii_logo_light.svg" height="100px;">
     </a>
-    <h1 align="center">Asset for Twitter Bootstrap 5.</h1>
+    <h1 align="center">Asset bundle for Twitter Bootstrap 5.</h1>
     <br>
 </p>
 
@@ -42,7 +42,7 @@ or add
 
 to the require-dev section of your `composer.json` file. 
 
-## Usage
+## Basic usage
 
 ```php
 <?php
@@ -59,6 +59,18 @@ BootstrapAsset::register($this);
 
 declare(strict_types=1);
 
+use Yii2\Asset\BootstrapPluginAsset;
+
+BootstrapPluginAsset::register($this);
+```
+
+## CDN usage
+
+```php
+<?php
+
+declare(strict_types=1);
+
 use Yii2\Asset\BootstrapCdnAsset;
 
 BootstrapCdnAsset::register($this);
@@ -69,39 +81,9 @@ BootstrapCdnAsset::register($this);
 
 declare(strict_types=1);
 
-use Yii2\Asset\BootstrapPluginAsset;
-
-BootstrapPluginAsset::register($this);
-```
-
-```php
-<?php
-
-declare(strict_types=1);
-
 use Yii2\Asset\BootstrapPluginCdnAsset;
 
 BootstrapPluginCdnAsset::register($this);
-```
-
-```php
-<?php
-
-declare(strict_types=1);
-
-use Yii2\Asset\PopperAsset;
-
-PopperAsset::register($this);
-```
-
-```php
-<?php
-
-declare(strict_types=1);
-
-use Yii2\Asset\PopperCdnAsset;
-
-PopperCdnAsset::register($this);
 ```
 
 ## Quality code
