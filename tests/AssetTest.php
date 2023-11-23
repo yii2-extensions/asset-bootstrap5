@@ -9,8 +9,6 @@ use Yii2\Asset\BootstrapAsset;
 use Yii2\Asset\BootstrapCdnAsset;
 use Yii2\Asset\BootstrapPluginAsset;
 use Yii2\Asset\BootstrapPluginCdnAsset;
-use Yii2\Asset\PopperAsset;
-use Yii2\Asset\PopperCdnAsset;
 use yii\web\AssetBundle;
 use yii\web\View;
 
