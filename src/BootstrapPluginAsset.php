@@ -25,14 +25,12 @@ final class BootstrapPluginAsset extends AssetBundle
         BootstrapAsset::class,
     ];
 
-    public function init(): void
+    public function __construct()
     {
-        parent::init();
+        $environment = defined('YII_ENV') ? YII_ENV : 'prod';
+        $jsFiles = $environment === 'prod' ? 'bootstrap.bundle.min.js' : 'bootstrap.bundle.js';
 
-        $assetBootstrapPlugin = YII_ENV === 'prod' ? ['bootstrap.bundle.min.js'] : ['bootstrap.bundle.js'];
-        $assetBootstrapPluginMap = YII_ENV === 'prod' ? ['bootstrap.bundle.min.js.map'] : ['bootstrap.bundle.js.map'];
-
-        $this->js = $assetBootstrapPlugin;
-        $this->publishOptions['only'] = array_merge($assetBootstrapPlugin, $assetBootstrapPluginMap);
+        $this->js = [$jsFiles];
+        $this->publishOptions['only'] = [$jsFiles, "{$jsFiles}.map"];
     }
 }
