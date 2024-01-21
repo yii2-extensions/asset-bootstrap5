@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Yii2\Asset\Tests;
 
+use PHPUnit\Framework\Attributes\RequiresPhp;
 use Yii;
 use Yii2\Asset\BootstrapAsset;
 use Yii2\Asset\BootstrapPluginAsset;
@@ -40,6 +41,7 @@ final class BootstrapPluginAssetTest extends \PHPUnit\Framework\TestCase
         $this->assertFileDoesNotExist(__DIR__ . '/Support/runtime/16b8de20/bootstrap.bundle.min.js.map');
     }
 
+    #[RequiresPhp('8.1')]
     public function testRegisterWithEnvironmentProd(): void
     {
         @runkit_constant_redefine('YII_ENV', 'prod');
