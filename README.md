@@ -31,16 +31,16 @@ The preferred way to install this extension is through [composer](https://getcom
 Either run
 
 ```
-composer require --dev --prefer-dist yii2-extensions/asset-bootstrap5
+composer require --prefer-dist yii2-extensions/asset-bootstrap5:"^0.1"
 ```
 
 or add
 
 ```
-"yii2-extensions/asset-bootstrap5": "dev-main"
+"yii2-extensions/asset-bootstrap5":"^0.1"
 ```
 
-to the require-dev section of your `composer.json` file. 
+to the require section of your `composer.json` file. 
 
 ## Basic usage
 
