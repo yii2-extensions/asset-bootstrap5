@@ -51,7 +51,7 @@
             "Composer\\Config::disableProcessTimeout",
             "roave-infection-static-analysis-plugin"
         ],
-        "psalm": "psalm",
+        "phpstan": "phpstan",
         "test": "phpunit"
     },
     "repositories": [
