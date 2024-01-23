@@ -33,7 +33,6 @@ final class BootstrapPluginAssetTest extends \PHPUnit\Framework\TestCase
         $result = $view->renderFile(__DIR__ . '/Support/main.php');
 
         $this->assertStringContainsString('bootstrap.bundle.js', $result);
-
         $this->assertSame(['bootstrap.bundle.js'], Yii::$app->assetManager->bundles[BootstrapPluginAsset::class]->js);
         $this->assertFileExists(__DIR__ . '/Support/runtime/16b8de20/bootstrap.bundle.js');
         $this->assertFileExists(__DIR__ . '/Support/runtime/16b8de20/bootstrap.bundle.js.map');
@@ -59,7 +58,6 @@ final class BootstrapPluginAssetTest extends \PHPUnit\Framework\TestCase
         $result = $view->renderFile(__DIR__ . '/Support/main.php');
 
         $this->assertStringContainsString('bootstrap.bundle.min.js', $result);
-
         $this->assertSame(['bootstrap.bundle.min.js'], Yii::$app->assetManager->bundles[BootstrapPluginAsset::class]->js);
         $this->assertFileExists(__DIR__ . '/Support/runtime/16b8de20/bootstrap.bundle.min.js');
         $this->assertFileExists(__DIR__ . '/Support/runtime/16b8de20/bootstrap.bundle.min.js.map');
