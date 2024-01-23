@@ -2,7 +2,8 @@
 
 ## Checking dependencies
 
-This package uses [composer-require-checker](https://github.com/maglnet/ComposerRequireChecker) to check if all dependencies are correctly defined in `composer.json`.
+This package uses [composer-require-checker](https://github.com/maglnet/ComposerRequireChecker) to check if all
+dependencies are correctly defined in `composer.json`.
 
 To run the checker, execute the following command:
 
