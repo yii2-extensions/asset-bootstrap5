@@ -6,19 +6,16 @@ namespace Yii2\Asset;
 
 use yii\web\AssetBundle;
 
+use function defined;
+
 /**
- * Twitter Bootstrap 5 JavaScript bundle.
+ * Twitter Bootstrap5 JavaScript bundle.
  */
 final class BootstrapPluginAsset extends AssetBundle
 {
-    /**
-     * @inheritDoc
-     */
     public $sourcePath = '@npm/bootstrap/dist/js';
 
     /**
-     * @inheritDoc
-     *
      * @phpstan-var array<array-key, mixed>
      */
     public $depends = [
@@ -27,10 +24,12 @@ final class BootstrapPluginAsset extends AssetBundle
 
     public function __construct()
     {
+        parent::__construct();
+
         $environment = defined('YII_ENV') ? YII_ENV : 'prod';
         $jsFiles = $environment === 'prod' ? 'bootstrap.bundle.min.js' : 'bootstrap.bundle.js';
 
         $this->js = [$jsFiles];
-        $this->publishOptions['only'] = [$jsFiles, "{$jsFiles}.map"];
+        $this->publishOptions['only'] = [$jsFiles, "$jsFiles.map"];
     }
 }

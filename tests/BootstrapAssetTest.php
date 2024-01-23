@@ -31,7 +31,6 @@ final class BootstrapAssetTest extends \PHPUnit\Framework\TestCase
         $result = $view->renderFile(__DIR__ . '/Support/main.php');
 
         $this->assertStringContainsString('bootstrap.css', $result);
-
         $this->assertSame(['bootstrap.css'], Yii::$app->assetManager->bundles[BootstrapAsset::class]->css);
         $this->assertFileExists(__DIR__ . '/Support/runtime/55145ba9/bootstrap.css');
         $this->assertFileExists(__DIR__ . '/Support/runtime/55145ba9/bootstrap.css.map');
@@ -42,7 +41,7 @@ final class BootstrapAssetTest extends \PHPUnit\Framework\TestCase
     #[RequiresPhp('8.1')]
     public function testRegisterWithEnvironmentProd(): void
     {
-        runkit_constant_redefine('YII_ENV', 'prod');
+        @runkit_constant_redefine('YII_ENV', 'prod');
 
         $view = new View();
 
@@ -63,6 +62,6 @@ final class BootstrapAssetTest extends \PHPUnit\Framework\TestCase
         $this->assertFileDoesNotExist(__DIR__ . '/Support/runtime/55145ba9/bootstrap.css');
         $this->assertFileDoesNotExist(__DIR__ . '/Support/runtime/55145ba9/bootstrap.css.map');
 
-        runkit_constant_redefine('YII_ENV', 'dev');
+        @runkit_constant_redefine('YII_ENV', 'dev');
     }
 }

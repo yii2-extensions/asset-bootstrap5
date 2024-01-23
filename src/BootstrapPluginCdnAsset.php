@@ -7,13 +7,11 @@ namespace Yii2\Asset;
 use yii\web\AssetBundle;
 
 /**
- * Twitter Bootstrap 5 CDN JavaScript bundle.
+ * Twitter Bootstrap5 CDN JavaScript bundle.
  */
 final class BootstrapPluginCdnAsset extends AssetBundle
 {
     /**
-     * @inheritDoc
-     *
      * @phpstan-var array<array-key, mixed>
      */
     public $js = [
@@ -21,8 +19,6 @@ final class BootstrapPluginCdnAsset extends AssetBundle
     ];
 
     /**
-     * @inheritDoc
-     *
      * @phpstan-var array<array-key, mixed>
      */
     public $jsOptions = [
@@ -31,8 +27,6 @@ final class BootstrapPluginCdnAsset extends AssetBundle
     ];
 
     /**
-     * @inheritDoc
-     *
      * @phpstan-var array<array-key, mixed>
      */
     public $depends = [
